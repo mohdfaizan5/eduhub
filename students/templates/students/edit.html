@@ -1,0 +1,43 @@
+{% extends 'students/base.html' %}
+
+{% block body %}
+
+{% if success %}
+
+<h3>Successfully Updated <span class="span">student</span></h3>
+
+{% else %}
+
+
+<div class="container container-success">
+    <div>
+      <form action="{% url 'edit' %}" method="post">
+    
+      {% csrf_token %}
+      {{ form.as_p}}
+      
+      {% comment %} <button type="submit" class="btn btn-primary" action="{% url 'index' %}">
+          Submit
+      </button> {% endcomment %}
+      <button
+          type="submit"
+          class="btn btn-primary"
+          onclick="this.form.action='{% url 'index' %}'; this.form.submit();"
+      >Submit
+    </button>
+      
+      <button type="reset" class="btn btn-success me-1" href="{% url 'index' %}" >
+          {% comment %} <i class="fa-solid fa-user-pen"></i> {% endcomment %}
+          Reset
+        </button>
+    
+    
+    </form>
+    </div>
+    </div>
+    
+    
+{% endif %}
+
+
+{% endblock body %}

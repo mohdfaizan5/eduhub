@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <title>Students..</title>
+    </head> 
+
+    <body>
+        <h1>
+            Students List:
+        </h1>
+
+    <th>
+        <th>First Name</th>
+    <th>Last Name</th>        <th>Subject</th>
+        <th>Email</th>
+        <th>GPA</th>
+        <th>Gender</th>
+    </th><br>
+    {% for student in students %}
+    <tb>
+        <tb>{{student.first_name}}</tb>
+        <tb>{{student.last_name}}</tb>
+        <tb>{{student.subject}}</tb>
+        
+        
+    </tb>
+    {% endfor %}
+    </body>
+</html>

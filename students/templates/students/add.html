@@ -1,0 +1,64 @@
+{% extends 'students/base.html' %}
+
+
+{% block nav_bar %}
+
+
+<ul class="navbar-nav mx-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'notes' %}">Notes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{% url 'index' %}">CRM</a>
+  </li>
+  <li class="nav-item"></li>
+  <li class="nav-item">
+    <a class="nav-link " href="{% url 'contact' %}">Contacts</a>
+  </li>
+</ul>
+{% endblock nav_bar %}
+
+
+{% block body %}
+
+{% if success %}
+
+<h3>Successfully added <span class="span">student</span></h3>
+
+{% else %}
+
+&nbsp;
+&nbsp;
+<div class="container container-success mt-5">
+    <div class="container mt-5">
+        &nbsp;
+        <h1>Add student</h1>
+        <form action="{% url 'add' %}" method="post">
+        
+      {% csrf_token %}
+      {{ form.as_p}}
+      
+      {% comment %} <button type="submit" class="btn btn-primary" action="{% url 'index' %}">
+          Submit
+      </button> {% endcomment %}
+      <button
+          type="submit"
+          class="btn btn-primary "
+          onclick="this.form.action='{% url 'index' %}'; this.form.submit();"
+      >Submit</button>
+      
+      <button type="reset" class="btn btn-success me-1" >
+          {% comment %} <i class="fa-solid fa-user-pen"></i> {% endcomment %}
+          Reset
+        </button>
+    
+    
+    </form>
+    </div>
+    </div>
+    
+    
+{% endif %}
+
+
+{% endblock body %}
