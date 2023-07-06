@@ -51,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  color: rgb(255,210,0);
+  color: rgb(229, 208, 112);
   transition: .4s;
   font-size: 17px;
 
@@ -145,7 +145,7 @@ span{
 
 .notes-section{
   display: block;
-  margin: 50px;
+  margin: 10px;
   color: black;
   font-weight: bold;
   font-size: 30px;

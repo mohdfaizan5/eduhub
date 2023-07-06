@@ -16,6 +16,10 @@ img{
 .tahirPic{
   object-position: bottom;
 }
+.likithaPic{
+  object-fit: cover;
+  object-position: center;
+}
 
 .teamContainer{
   padding: 10px;
