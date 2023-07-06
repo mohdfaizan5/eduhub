@@ -1,3 +1,5 @@
+finally working on mobile resp
+
 # Notes section V1.1
 
   This website will contain currently all notes of 1st year Students.

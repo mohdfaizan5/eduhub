@@ -152,9 +152,9 @@ span{
   bottom: 10%;
 }
 
-.viewContainer{
+/* .viewContainer{
   top: ;
-}
+} */
 
 .view-button:hover{
   color: rgb(255,210,0);
@@ -244,6 +244,7 @@ span .stuff-no{
 .team{
   margin: 10px;
   color: rgb(255,210,0);
+  font-size: large;
 }
 
 
@@ -254,3 +255,45 @@ span .stuff-no{
   grid-template-rows: 100px 100px 30px;
   width: 150px;
 } */
+
+@media only screen and (max-width: 620px){
+  /* body{
+    background-color: chocolate;
+  } */
+  .container1,.container2{
+    display: block ;
+    margin-left: 18px;
+  }
+  .b,.c,.d{
+    margin-left: 55px;
+  }
+  .a{
+    margin-left: 55px;
+  }
+  .a,.b,.c,.d{
+    margin-top: 20px;
+  }
+  .e{
+    height: 230px;
+  }
+  p{
+ font-size: 20px;
+ padding: 2px;
+  }
+  .box-container{
+    height: 80px;   
+    width: 250px;    
+  }
+  .box-container p{
+    font-size: 12px;
+  }
+  .box-container button{
+    padding: 5px;
+  }
+  .team{
+    font-size: 20px;
+  }
+  .notes-section u{
+    font-size: 42px;
+  }
+}
