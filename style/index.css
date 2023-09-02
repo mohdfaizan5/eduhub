@@ -1,0 +1,58 @@
+body{
+  font-family: 'Raleway';
+  color: rgb(45, 45, 45);
+}
+span{
+  /* border: ; */
+  border-bottom:7px solid rgb(255, 210, 0) ;
+  border-radius: 3px; 
+  font-size: 32px;
+  /* font-weight: 400; */
+}
+
+.slogan{
+  align-items: center;
+}
+
+#box{
+  height: 200px;
+  width: 150px;
+  border: 2px solid gray;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.container{
+  padding: 20px;
+}
+
+.notes-btn{
+  margin-top: 15px;
+  background-color: rgb(255, 210, 0);
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+footer{
+  align-items: center;
+  margin: auto;
+}
+
+a{
+  color: rgb(45, 45, 45);
+}
+
+#company{
+  display: inline-block;
+}
+
+
+#nav-links{
+  /* float: right; */
+  padding-left: 100px;
+}
