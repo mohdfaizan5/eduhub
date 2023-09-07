@@ -6,10 +6,10 @@
 
 /* Header CSS */ 
 
-.header{
+header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo-image{
@@ -32,6 +32,7 @@
 
 .logo-container{
   display: flex;
+  justify-content: flex-end;
 }
 
 nav ul{
@@ -139,18 +140,6 @@ span{
   justify-content: center;
 }
 
-.view-button{
-  border: none;
-  color: black;
-  background-color: rgb(255,210,0);
-  margin-top: 20px;
-  padding: 14px;
-  border-radius: 6px;
-  font-size: 17px;
-  cursor: pointer;
-  font-weight: bold;
-  bottom: 10%;
-}
 
 /* .viewContainer{
   top: ;
@@ -248,18 +237,64 @@ span .stuff-no{
 }
 
 
-/* Faizan */
-/* .box-container{
-  border: 1px solid grey;
+main{
   display: grid;
-  grid-template-rows: 100px 100px 30px;
-  width: 150px;
-} */
+  grid-template-columns: 300px 300px 300px 300px;
+  column-gap: 3px;
+  row-gap: 20px;
+  overflow: hidden;
+}
 
+.noteContainer{
+  width: 170px;
+  height: 200px;
+  padding: 15px;
+  border: 1px solid rgb(23, 23, 23);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.topNoteContainer{
+  height: 60%;
+}
+
+.bottomNoteContainer{
+  height: 40%;
+
+}
+
+
+.view-button{
+  border: none;
+  color: black;
+  background-color: rgb(255,210,0);
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  bottom: 10%;
+}
+
+
+/* RESPONSIVE DESIGN */
 @media only screen and (max-width: 620px){
   /* body{
     background-color: chocolate;
   } */
+
+  main{
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* column-gap: 3px; */
+    row-gap: 20px;
+    /* overflow: hidden; */
+    /* margin-left: ; */
+  }
+
   .container1,.container2{
     display: block ;
     margin-left: 18px;
