@@ -57,3 +57,8 @@ img{
   margin-top: 10px;
   margin-left: 30px;
 }
+
+a{
+  text-decoration: none;
+  margin-right: 5px;
+}

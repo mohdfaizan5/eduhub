@@ -1,7 +1,49 @@
-body{
-  font-family: 'Raleway';
-  color: rgb(45, 45, 45);
+/* NOTES container */
+
+main {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 10px;
+  row-gap: 25px;
+  overflow: hidden;
+  padding: 0px 5%;
+  align-items: center;
+  justify-content: center;
 }
+
+.noteContainer {
+  width: 170px;
+  height: 200px;
+  padding: 15px;
+  border: 1px solid rgb(23, 23, 23);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.topNoteContainer {
+  height: 55%;
+}
+
+.bottomNoteContainer {
+  height: 40%;
+
+}
+
+
+.view-button {
+  border: none;
+  color: black;
+  background-color: rgb(255, 210, 0);
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  bottom: 10%;
+}
+
+/* NOTES container end */
 span{
   /* border: ; */
   border-bottom:7px solid rgb(255, 210, 0) ;
@@ -38,10 +80,6 @@ span{
   border-radius: 5px;
 }
 
-footer{
-  align-items: center;
-  margin: auto;
-}
 
 a{
   color: rgb(45, 45, 45);
@@ -56,3 +94,248 @@ a{
   /* float: right; */
   padding-left: 100px;
 }
+
+
+
+/* Header CSS
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-image {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.logo-context {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 25px 25px;
+  list-style-type: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 210, 0);
+  transition: .4s;
+  font-size: 17px;
+
+} */
+
+/* Body CSS */
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 17.5px;
+}
+
+
+span {
+  color: rgb(255, 210, 0);
+  font-size: inherit;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.a {
+  border: 2px solid rgb(255, 210, 0);
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+.b {
+  border: 2px solid rgb(255, 210, 0);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin-right: 30px;
+
+}
+
+.c {
+  border: 2px solid rgb(255, 210, 0);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.d {
+  border: 2px solid rgb(255, 210, 0);
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+
+}
+
+.container-view {
+  display: flex;
+  justify-content: center;
+}
+
+.view-button:hover {
+  color: rgb(255, 210, 0);
+  background-color: black;
+  transition: .4s;
+}
+
+.notes-section {
+  display: block;
+  margin: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.underline {
+  text-decoration-color: rgb(255, 210, 0);
+  text-decoration-line: underline;
+  margin: auto;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+/* Footer CSS */
+
+span .stuff-no {
+  font-family: Arial;
+  background-color: rgb(255, 210, 0);
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 10px 1px 0px black;
+}
+
+.stuff {
+  margin-top: 60px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 620px) {
+
+  body{
+    margin: 0px 3%;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 300px;
+    /* justify-content: flex-start; */
+    align-items: center;
+    row-gap: 20px;
+  }
+  .noteContainer{
+    margin: auto;
+  }
+
+  .container1,
+  .container2 {
+    display: block;
+    /* margin-left: 18px; */
+  }
+
+  p {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  .contactUs-container {
+    width: 95%;
+  }
+
+  .contactUs-container p {
+    font-size: 12px;
+  }
+
+  .contactUs-container button {
+    padding: 5px;
+  }
+
+  .team {
+    font-size: 20px;
+  }
+
+  .notes-section u {
+    font-size: 42px;
+  }
+
+  nav{
+    padding: 0px 2px;
+    font-size: 10px;
+  }
+  nav ul li{
+    padding: 0px 5px;
+    list-style-type: none;
+
+  }
+}
+/* @media (max-width: 374px) {
+  .noteContainer{
+    margin-left: 10px;
+  }
+  
+} */

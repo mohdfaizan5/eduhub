@@ -1,0 +1,262 @@
+/* THis contains
+
+- Header && Header Responsiveness
+- Footer && Footer Responsiveness
+- Other basic body things
+*/
+
+
+/* BODY */
+* {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* font-family: Raleway, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+
+}
+
+body {
+  font-family: 'Raleway';
+  color: rgb(45, 45, 45);
+}
+
+/* Body CSS */
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+
+span {
+  color: rgb(255, 210, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.a {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.b {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin-right: 50px;
+
+}
+
+.c {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.d {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.e {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.container-download {
+  display: flex;
+  justify-content: center;
+}
+
+.download-button {
+  border: none;
+  color: black;
+  background-color: rgb(255, 210, 0);
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.notes-section {
+  display: block;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.underline {
+  text-decoration-color: rgb(255, 210, 0);
+  text-decoration-line: underline;
+}
+
+
+
+/* HEADER */
+
+/* .header{
+display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0px 50px;
+}
+
+.logo-image {
+  width: 30px;
+  height: 30px;
+  /* margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px; */
+  cursor: pointer;
+}
+
+.logo-context {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 6px;
+  cursor: pointer;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0px 15px;
+  list-style-type: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: rgb(229, 208, 112);
+  transition: .4s;
+  font-size: 17px;
+
+}
+
+
+
+
+/* Footer CSS */
+
+span .stuff-no {
+  font-family: Arial;
+  background-color: rgb(255, 210, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.stuff {
+  margin-top: 60px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CONTACT US CONTAINER */
+.contactUs-container {
+  display: flex;
+  background-color: rgb(36, 40, 91);
+  width: 70%;
+  margin: auto;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+  padding: 7px 10px;
+}
+
+.question {
+  color: rgb(255, 210, 0);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.contact-button {
+  /* margin-right: 30px; */
+  background-color: white;
+  color: rgb(45, 45, 45);
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-button:hover {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  transition: .4s;
+}
+
+
+/* FOOTER */
+.copyright-claim {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 12px;
+
+}
+
+.team {
+  margin: 10px;
+  color: rgb(255, 210, 0);
+  font-size: large;
+}
+
+
+/* FOOTER RESPONSIVENESS */
+@media (min-width: 550px) {
+  
+}

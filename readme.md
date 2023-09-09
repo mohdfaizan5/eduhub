@@ -49,3 +49,12 @@ dark-blue:  rgb(36, 40, 91)
 "Railway"
 
 ## Success Matrics
+100 user (achived🎯)
+
+
+
+## Version 4:
+
+- Added grid concept
+- Improved nav bar 
+- Better RWD
