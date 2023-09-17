@@ -44,19 +44,19 @@ main {
 }
 
 /* NOTES container end */
-span{
+span {
   /* border: ; */
-  border-bottom:7px solid rgb(255, 210, 0) ;
-  border-radius: 3px; 
+  border-bottom: 7px solid rgb(255, 210, 0);
+  border-radius: 3px;
   font-size: 32px;
   /* font-weight: 400; */
 }
 
-.slogan{
+.slogan {
   align-items: center;
 }
 
-#box{
+#box {
   height: 200px;
   width: 150px;
   border: 2px solid gray;
@@ -68,11 +68,11 @@ span{
   border-radius: 3px;
 }
 
-.container{
+.container {
   padding: 20px;
 }
 
-.notes-btn{
+.notes-btn {
   margin-top: 15px;
   background-color: rgb(255, 210, 0);
   border: none;
@@ -81,16 +81,16 @@ span{
 }
 
 
-a{
+a {
   color: rgb(45, 45, 45);
 }
 
-#company{
+#company {
   display: inline-block;
 }
 
 
-#nav-links{
+#nav-links {
   /* float: right; */
   padding-left: 100px;
 }
@@ -270,17 +270,44 @@ span .stuff-no {
   margin-bottom: 20px;
 }
 
+/* SEARCH BUTTON */
+.search__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
+.search__container input {
+  border: none;
+  border-bottom: 1px solid rgb(23, 23, 23);
+  padding: 5px 6px;
+  font-size: 16px;
 
+}
+
+.search__container input:focus {
+  /* border: 1px solid green; */
+  /* border-bottom: 1px solid rgb(255, 210, 0); */
+  /* background-color: antiquewhite; */
+  cursor: pointer;
+}
+
+.search__container img {
+  /* background-color: rgb(255, 210, 0); */
+  width: 20px;
+  margin-left: 2px;
+}
 
 
 /* RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 620px) {
 
-  body{
+  body {
     margin: 0px 3%;
   }
+
   main {
     display: grid;
     grid-template-columns: 300px;
@@ -288,7 +315,8 @@ span .stuff-no {
     align-items: center;
     row-gap: 20px;
   }
-  .noteContainer{
+
+  .noteContainer {
     margin: auto;
   }
 
@@ -323,16 +351,18 @@ span .stuff-no {
     font-size: 42px;
   }
 
-  nav{
+  nav {
     padding: 0px 2px;
     font-size: 10px;
   }
-  nav ul li{
+
+  nav ul li {
     padding: 0px 5px;
     list-style-type: none;
 
   }
 }
+
 /* @media (max-width: 374px) {
   .noteContainer{
     margin-left: 10px;
