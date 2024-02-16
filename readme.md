@@ -18,8 +18,9 @@ finally working on mobile resp
 &nbsp;
 ## Website UI
 
-<img src="static/result/Version1.jpg" alt="HI.." height='250'>
-<!-- ![Version1](/static/result/Version1.jpg) -->
+![image](https://github.com/mohdfaizan5/eduhub/assets/79694828/a3c43d69-c2eb-473d-82a9-00746ccf2a08)
+![image](https://github.com/mohdfaizan5/eduhub/assets/79694828/035ad788-4d63-4d44-b00f-ffc229f8d05d)
+
 
 
 ## Demo
